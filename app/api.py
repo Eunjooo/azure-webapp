@@ -12,7 +12,7 @@ model = load(ROOT_DIR / "artifacts/model.joblib")
 
 @app.get("/")
 def root():
-    return "Welcome to Wine!!ejlee!!하이"
+    return "Welcome to Wine!!ejlee!!수정"
 
 @app.post("/predict", response_model=Rating)
 def predict(response: Response, sample: Wine):
